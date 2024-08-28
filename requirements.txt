@@ -1,0 +1,3 @@
+selenium==3
+phonenumbers
+webdriver_manager
