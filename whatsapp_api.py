@@ -93,5 +93,6 @@ class WhatsApp:
     def get_last_message(self):
         '''Get last message from the chat'''
         all_messages = self.get_all_messages()
-        return all_messages[-1]
+        length_all_messages = len(all_messages)
+        return all_messages[length_all_messages-1]
 

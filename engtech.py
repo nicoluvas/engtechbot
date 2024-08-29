@@ -7,8 +7,11 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 wp = WhatsApp()
 
 input("pressione enter após executar qrcode")
+
 wp.search_contact('nicolyvas')
 wp.send_message('hello')
+wp.send_message(wp.get_last_message())
+
 
 sleep(10)
 wp.driver.close()
