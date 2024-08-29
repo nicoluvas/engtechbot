@@ -20,7 +20,7 @@ class WhatsApp:
     def __init__(self):
         self.driver = self._setup_driver()
         self.driver.get(WP_LINK)
-        print("Please scan the QR Code")
+        print("scan qr code")
 
     @staticmethod
     def _setup_driver():
@@ -85,11 +85,13 @@ class WhatsApp:
             print("Contact not found")
             
     def get_all_messages(self):
+        '''Get all messages from the chat'''
         all_messages_element = self.driver.find_elements(By.CLASS_NAME, '_21Ahp')
         all_messages_text = [e.text for e in all_messages_element]
         return all_messages_text
         
     def get_last_message(self):
+        '''Get last message from the chat'''
         all_messages = self.get_all_messages()
         return all_messages[-1]
 
