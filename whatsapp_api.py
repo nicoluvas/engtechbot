@@ -87,12 +87,13 @@ class WhatsApp:
             
     def get_all_messages(self):
         '''Get all messages from the chat'''
-        all_messages_element = self.driver.find_elements(By.CLASS_NAME, '_21Ahp')
+        all_messages_element = self.driver.find_elements(By.CLASS_NAME, '_akbu')
         all_messages_text = [e.text for e in all_messages_element]
         return all_messages_text
         
     def get_last_message(self):
         '''Get last message from the chat'''
         all_messages = self.get_all_messages()
-        return all_messages[-1]
-
+        print("return debug all: " + str(all_messages))
+        print("return debug last one: " + str(all_messages[-1]))
+        return str(all_messages[-1])
