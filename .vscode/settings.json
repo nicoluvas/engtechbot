@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "*.git": true,
+    "*.git.*": true,
+    "*.gitignore": true,
+    "*.gitignore.*": true,
+    "*.vscode": true,
+    "*.vscode.*": true,
+    "*chromedriver": true,
+    "*chromedriver.*": true,
+    "*README": true,
+    "*README.*": true,
+    "*requirements": true,
+    "*requirements.*": true,
+    "*__pycache__": true,
+    "*__pycache__.*": true
+  }
+}
