@@ -1,6 +1,6 @@
 from time import sleep
 from selenium import webdriver
-from whatsapp_api import WhatsApp
+from src.whatsapp_api import WhatsApp
 from webdriver_manager.chrome import ChromeDriverManager
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
