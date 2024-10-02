@@ -8,6 +8,8 @@ from time import sleep
 # Parameters
 WP_LINK = 'https://web.whatsapp.com'
 
+## HTML CLASSES
+CURRENT_USER = '_ao3e'
 
 ## XPATHS
 CONTACTS = '//*[@id="main"]/header/div[2]/div[2]/span'
