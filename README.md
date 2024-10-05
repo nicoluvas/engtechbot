@@ -1,9 +1,16 @@
-# init
+# EngTech Whatsapp Bot
 
-pip3 install -r modules\requirements.txt
+---
 
-> to-do list 
->
-> > database 
-> > respond numbers
-> > fetch messages
+### Dependencies
+
+`pip3 install -r modules\requirements.txt`
+
+---
+
+### To-Do
+
+- [x] searches
+- [ ] database
+- [ ] reading
+- [ ] comprehension
