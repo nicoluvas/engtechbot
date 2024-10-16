@@ -99,3 +99,10 @@ class WhatsApp:
         print("return debug all: " + str(all_messages))
         print("return debug last one: " + str(all_messages[-1]))
         return str(all_messages[-1])
+
+    def get_actual_username(self):
+        from selenium.webdriver.common.by import By
+        current_user_element = self.driver.find_element(By.XPATH, '//*[@id="main"]/header/div[2]/div[1]/div/div/span[1]')
+        current_user_text = current_user_element.text
+
+    
