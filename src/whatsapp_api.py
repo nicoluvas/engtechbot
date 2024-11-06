@@ -8,17 +8,6 @@ from time import sleep
 # Parameters
 WP_LINK = 'https://web.whatsapp.com'
 
-## HTML CLASSES
-CURRENT_USER = '_ao3e'
-
-## XPATHS
-CONTACTS = '//*[@id="main"]/header/div[2]/div[2]/span'
-MESSAGE_BOX = '//*[@id="main"]/footer/div[1]/div/span/div/div[2]/div[1]/div/div[1]/p'
-SEND = '//*[@id="main"]/footer/div[1]/div/span/div/div[2]/div[2]/button'
-NEW_CHAT = '//*[@id="app"]/div/div[2]/div[3]/header/header/div/span/div/span/div[1]/div/span'
-FIRST_CONTACT = '//*[@id="app"]/div/div[2]/div[2]/div[1]/span/div/span/div/div[2]/div/div/div/div[2]/div/div/div[2]'
-SEARCH_CONTACT = '//*[@id="app"]/div/div[2]/div[2]/div[1]/span/div/span/div/div[1]/div[2]/div[2]/div/div[1]'
-
 class WhatsApp:
     def __init__(self):
         self.driver = self._setup_driver()
@@ -80,7 +69,7 @@ class WhatsApp:
     def search_contact(self, keyword):
         '''Write and send message'''
         self._click(NEW_CHAT)
-        self._send_keys(SEARCH_CONTACT, keyword)
+        self._send_keys(NEW_CHAT, keyword)
         sleep(1)
         try:
             self._click(FIRST_CONTACT)
